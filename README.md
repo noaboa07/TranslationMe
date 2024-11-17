@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 My Video Walkthrough:
 
-<img style="max-width:300px;" src="">
+<img style="max-width:300px;" src="TranslateMe/Project6.gif">
 
 GIF created with VEED.io
 

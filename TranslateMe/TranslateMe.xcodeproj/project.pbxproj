@@ -33,6 +33,7 @@
 		A35F001D2CE9540300DE5743 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		A35F00222CE956D500DE5743 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		A35F00242CE9578000DE5743 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		A35F00262CE968D500DE5743 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		A35FFFFA2CE9507B00DE5743 = {
 			isa = PBXGroup;
 			children = (
+				A35F00262CE968D500DE5743 /* README.md */,
 				A35F00052CE9507B00DE5743 /* TranslateMe */,
 				A35F00042CE9507B00DE5743 /* Products */,
 				A35F001F2CE956BF00DE5743 /* Frameworks */,

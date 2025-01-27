@@ -1,56 +1,90 @@
-# Project 6 - *TranslationMe*
+# TranslationMe - Real-Time Language Translation App
 
-Submitted by: **Noah Russell** ZNumber: **Z23667779**
+**TranslationMe** is an innovative app that enables users to easily translate text and speech between multiple languages. The app provides an intuitive interface where users can input text, select source and target languages, and instantly view translation results. Additionally, the app supports voice output with a "read aloud" button for better accessibility. It also stores translation history, allowing users to manage past translations and clear the history when needed.
 
-**TranslationMe** is an app that allows users to translate text and speech between a variety of languages. The app provides an intuitive interface where users can enter text, select source and target languages, and view translation results in real-time. Additionally, users can listen to the translated text through a "read aloud" button for better accessibility. The app stores translation history and allows users to manage it easily by clearing translation history if necessary.
+- **Developer:** Noah Russell
+- **Development Time:** 5 hours
+- **Technologies Used:** Swift, Firestore, AVFoundation, Xcode
 
-Time spent: **5** hours spent in total
+## Features
 
-## Required Features
+The following required features have been successfully implemented:
 
-The following **required** functionality is completed:
+- [✅] **Translation Interface**: Users can enter a word, phrase, or sentence, select source and target languages, and translate it with the tap of a button.
+- [✅] **Real-Time Translation**: After tapping the "Translate" button, the text entered in the upper field is translated into the lower field.
+- [✅] **Translation History**: The app saves translation history and displays a list of past translations.
+- [✅] **Clear History**: Users can erase the entire translation history with a confirmation prompt.
 
-- [✅︎] Users open the app to a TranslationMe home page with a place to enter a word, phrase or sentence, a button to translate, and another field that should initially be empty
-- [✅︎] When users tap translate, the word written in the upper field translates in the lower field. The requirement is only that you can translate from one language to another.
-- [✅︎] A history of translations can be stored (in a scroll view in the same screen, or a new screen)
-- [✅︎] The history of translations can be erased
- 
-The following **optional** features are implemented:
+The following optional features have been implemented:
 
-- [✅︎] Add a variety of choices for the languages (8 different languages)
-- [✅︎] Add UI flair
+- [✅] **Language Variety**: Users can choose from 8 different languages for translation.
+- [✅] **UI Flair**: The app has a clean and modern design, with smooth transitions and visual enhancements.
 
-The following **additional** features are implemented:
+The following additional features have been implemented:
 
-- [✅︎]  Error handling for translation failures and issues with history retrieval.
-- [✅︎] AV Speech: Users can listen to the translated text with a "read aloud" button, improving accessibility by allowing the app to read the translated text out loud.
-- [✅︎] The app saves translation history to Firestore and displays a list of past translations with timestamps.
-- [✅︎] clear all translations with a confirmation prompt
+- [✅] **Error Handling**: Translation failures and issues with retrieving history are managed gracefully with error messages.
+- [✅] **AV Speech**: Users can listen to the translated text using a "read aloud" button to improve accessibility.
+- [✅] **Persistent Storage**: Translations are stored in Firestore and displayed with timestamps in the history list.
+- [✅] **Clear All Translations**: Users can clear all translations with a confirmation prompt to ensure a clean slate.
+
+## Future Enhancements
+
+Potential future features include:
+
+- [🔲] **Multi-Sentence Translation**: Expand the translation feature to handle multiple sentences rather than just a single word or phrase at a time.
+- [🔲] **Offline Mode**: Implement offline translation capabilities by storing translations locally.
+
+## Setup Instructions
+
+To run the **TranslationMe** app locally, follow these steps:
+
+1. **Clone the Repository**:
+    - `git clone https://github.com/your-username/TranslationMe.git`
+    - `cd TranslationMe`
+2. **Open in Xcode**:
+    - Open the `.xcodeproj` or `.xcworkspace` file in Xcode.
+3. **Install Dependencies**:
+    - If using CocoaPods or Swift Package Manager, install the required libraries (if any).
+4. **Build and Run**:
+    - Select the desired simulator or physical iOS device.
+    - Click the "Run" button to build and launch the app.
+5. **Test**:
+    - Enter text, select languages, and test the translation functionality.
+    - Use the "Read Aloud" button and manage your translation history.
 
 ## Video Walkthrough
 
-My Video Walkthrough:
+Here’s a quick demonstration of the app’s core features:
 
-<img style="max-width:300px;" src="TranslateMe/Project6.gif">
+<img style="max-width:300px;" src="TranslateMe/Project6.gif" alt="TranslationMe Demo">  
+GIF created with VEED.io.
 
-GIF created with VEED.io
+## Development Process
 
-## Notes
+The app was developed using Swift and integrated with Firestore for persistent storage. The AVFoundation framework was used to add voice capabilities, enabling the "read aloud" feature for translated text. Firestore was utilized for storing translation history, and error handling was implemented to ensure smooth functionality. 
 
-Some challenges encountered while building the app included working with Firestore for storing and retrieving translations. Ensuring that the UI remained responsive during translation requests, as well as managing loading states for smoother user experience, also required some attention. The language picker and handling translations dynamically were key tasks, and integrating Firebase for persistence helped make the app more robust. Additionally, incorporating voice input and AV speech synthesis significantly enhanced the app's accessibility and user experience. Also, I had a lot of trouble with attempting to translate the entire sentence of an input instead of just the first word.
+## Challenges Faced
+
+- **Translation Handling**: Initially, there were challenges in ensuring the app could translate entire sentences and handle dynamic text.
+- **Firestore Integration**: Setting up Firestore for persistent data storage and managing history retrieval was tricky, especially with real-time updates.
+- **UI Responsiveness**: Maintaining UI responsiveness during translation requests required proper loading state management.
+- **Voice Integration**: Incorporating voice synthesis for the "read aloud" feature added an extra layer of complexity in terms of both UI and accessibility.
+
+## Key Takeaways
+
+- Gained experience with integrating Firestore for persistent data storage.
+- Developed accessibility features like AV speech synthesis to make the app more inclusive.
+- Overcame challenges in managing dynamic language translations, error handling, and UI responsiveness.
+
+## Technologies Used
+
+- **Programming Language**: Swift
+- **Frameworks**: Firestore, AVFoundation
+- **Development Environment**: Xcode 14.0+
+- **Version Control**: Git, GitHub
 
 ## License
 
-    Copyright [2024] [Noah Russell]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+**TranslationMe** is licensed under the Apache License 2.0.  
+You may obtain a copy of the license at:  
+[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
